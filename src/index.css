@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #f4f8fd;
+    color: #0b2545;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translate3d(0, 0px, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(0, -18px, 0) rotate(3deg);
+  }
+}
+
+@keyframes floatReverse {
+  0%, 100% {
+    transform: translate3d(0, 0px, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(0, 16px, 0) rotate(-3deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(1.12);
+  }
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translate3d(0%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes shimmerSweep {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@layer utilities {
+  /* Deep Royal Navy & Sapphire Blue Hero Grid Background (never transparent) */
+  .bg-grid-pattern {
+    background-color: #071936;
+    background-image:
+      linear-gradient(to right, rgba(56, 189, 248, 0.08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(56, 189, 248, 0.08) 1px, transparent 1px),
+      linear-gradient(135deg, #041022 0%, #0b2545 50%, #134074 100%);
+    background-size: 40px 40px, 40px 40px, 100% 100%;
+  }
+
+  .bg-light-grid {
+    background-image:
+      radial-gradient(rgba(37, 99, 235, 0.12) 1px, transparent 1px),
+      radial-gradient(rgba(11, 37, 69, 0.06) 1px, transparent 1px);
+    background-size: 32px 32px;
+    background-position: 0 0, 16px 16px;
+  }
+
+  /* Explicit Blue Theme Overrides to guarantee instant HMR application */
+  .bg-brand-navy {
+    background-color: #0B2545 !important;
+  }
+  .bg-brand-blue {
+    background-color: #1D4ED8 !important;
+  }
+  .bg-brand-accent {
+    background-color: #2563EB !important;
+  }
+  .hover\:bg-brand-accentHover:hover {
+    background-color: #1D4ED8 !important;
+  }
+  .text-brand-navy {
+    color: #0B2545 !important;
+  }
+  .text-brand-blue {
+    color: #1D4ED8 !important;
+  }
+  .text-brand-accent {
+    color: #2563EB !important;
+  }
+  .border-brand-accent {
+    border-color: #2563EB !important;
+  }
+  .ring-brand-accent {
+    --tw-ring-color: #2563EB !important;
+  }
+  .from-brand-navy {
+    --tw-gradient-from: #0B2545 var(--tw-gradient-from-position) !important;
+    --tw-gradient-to: rgb(11 37 69 / 0) var(--tw-gradient-to-position) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+  }
+  .from-brand-accent {
+    --tw-gradient-from: #2563EB var(--tw-gradient-from-position) !important;
+    --tw-gradient-to: rgb(37 99 235 / 0) var(--tw-gradient-to-position) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+  }
+  .via-brand-blue {
+    --tw-gradient-to: rgb(29 78 216 / 0) var(--tw-gradient-to-position) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), #1D4ED8 var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
+  }
+  .to-brand-accent {
+    --tw-gradient-to: #0284C7 var(--tw-gradient-to-position) !important;
+  }
+  .to-brand-blue {
+    --tw-gradient-to: #1D4ED8 var(--tw-gradient-to-position) !important;
+  }
+  .to-brand-navy {
+    --tw-gradient-to: #0B2545 var(--tw-gradient-to-position) !important;
+  }
+
+  .animate-float-slow {
+    animation: floatSlow 6s ease-in-out infinite;
+  }
+
+  .animate-float-reverse {
+    animation: floatReverse 7s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulseGlow 5s ease-in-out infinite;
+  }
+
+  .animate-marquee {
+    display: flex;
+    width: max-content;
+    animation: marqueeScroll 32s linear infinite;
+  }
+
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+
+  .text-shimmer {
+    background: linear-gradient(
+      90deg,
+      #60a5fa 0%,
+      #38bdf8 30%,
+      #ffffff 50%,
+      #38bdf8 70%,
+      #60a5fa 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmerSweep 6s linear infinite;
+  }
+
+  .card-3d-hover {
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .card-3d-hover:hover {
+    transform: translateY(-8px) scale(1.015);
+    box-shadow: 0 24px 48px -12px rgba(11, 37, 69, 0.22), 0 0 0 1px rgba(37, 99, 235, 0.45);
+  }
+}
