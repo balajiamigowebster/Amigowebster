@@ -1,11 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import { SEO_PAGES, FAQS, COMPANY_INFO } from '../data/siteData';
+import { BLOG_POSTS } from '../data/blogData';
 import { CheckCircle2, Search, Code, MapPin, X, Sparkles } from 'lucide-react';
 
-export default function SEOHead({ activePage }) {
+export default function SEOHead({ activePage, activeBlogSlug = null }) {
   const [showInspector, setShowInspector] = useState(false);
-  const currentSeo = SEO_PAGES[activePage] || SEO_PAGES.home;
-  const canonicalUrl = `${COMPANY_INFO.website}${currentSeo.path}`;
+  const activeBlog = activeBlogSlug ? BLOG_POSTS.find((b) => b.slug === activeBlogSlug) : null;
+  const currentSeo = activeBlog
+    ? {
+        path: activeBlog.path,
+        title: activeBlog.metaTitle || activeBlog.title,
+        description: activeBlog.metaDescription,
+        keywords: [activeBlog.primaryKeyword, ...activeBlog.secondaryKeywords].join(', '),
+        h1: activeBlog.title
+      }
+    : SEO_PAGES[activePage] || SEO_PAGES.home;
+  const siteOrigin =
+    typeof window !== 'undefined' && window.location.origin.includes('amigowebster')
+      ? window.location.origin
+      : COMPANY_INFO.website;
+  const canonicalUrl = `${siteOrigin}${currentSeo.path}`;
 
   useEffect(() => {
     // Update Document Title
@@ -80,6 +94,64 @@ export default function SEOHead({ activePage }) {
           ],
           description: currentSeo.description
         },
+        ...(activePage === 'helpdesk' || activePage === 'billing' || activePage === 'quickcommerce'
+          ? [
+              {
+                '@type': 'SoftwareApplication',
+                name: currentSeo.h1,
+                applicationCategory: 'BusinessApplication',
+                operatingSystem: 'Web, Cloud, Windows, macOS, Android, iOS',
+                url: canonicalUrl,
+                description: currentSeo.description,
+                offers: {
+                  '@type': 'Offer',
+                  price: '11999',
+                  priceCurrency: 'INR',
+                  availability: 'https://schema.org/InStock'
+                },
+                aggregateRating: {
+                  '@type': 'AggregateRating',
+                  ratingValue: '4.9',
+                  bestRating: '5',
+                  ratingCount: '68'
+                },
+                author: {
+                  '@type': 'Organization',
+                  name: COMPANY_INFO.name,
+                  url: siteOrigin
+                }
+              }
+            ]
+          : []),
+        ...(activeBlog
+          ? [
+              {
+                '@type': 'BlogPosting',
+                headline: activeBlog.title,
+                description: activeBlog.metaDescription,
+                image: activeBlog.heroImage,
+                datePublished: activeBlog.publishDate,
+                dateModified: activeBlog.publishDate,
+                author: {
+                  '@type': 'Person',
+                  name: activeBlog.author
+                },
+                publisher: {
+                  '@type': 'Organization',
+                  name: COMPANY_INFO.name,
+                  logo: {
+                    '@type': 'ImageObject',
+                    url: `${siteOrigin}/logo-1.png`
+                  }
+                },
+                mainEntityOfPage: {
+                  '@type': 'WebPage',
+                  '@id': canonicalUrl
+                },
+                keywords: [activeBlog.primaryKeyword, ...activeBlog.secondaryKeywords].join(', ')
+              }
+            ]
+          : []),
         {
           '@type': 'FAQPage',
           mainEntity: FAQS.map((faq) => ({

@@ -1,11 +1,22 @@
 import React from 'react';
-import { COMPANY_INFO, CHENNAI_AREAS } from '../data/siteData';
+import { COMPANY_INFO, CHENNAI_AREAS, AREA_BLOG_MAP } from '../data/siteData';
 import { Phone, Mail, MapPin, Globe, CheckCircle, ArrowRight } from 'lucide-react';
 
-export default function Footer({ onNavigate }) {
+export default function Footer({ onNavigate, onOpenBlog }) {
   const handleLink = (e, pageId) => {
     e.preventDefault();
     onNavigate(pageId);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleAreaClick = (e, area) => {
+    e.preventDefault();
+    const slug = AREA_BLOG_MAP[area] || 'website-development-in-medavakkam';
+    if (onOpenBlog) {
+      onOpenBlog(slug);
+    } else {
+      onNavigate('blog');
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -36,15 +47,21 @@ export default function Footer({ onNavigate }) {
             </button>
           </div>
           <div className="flex flex-wrap gap-2">
-            {CHENNAI_AREAS.map((area) => (
-              <button
-                key={area}
-                onClick={(e) => handleLink(e, 'contact')}
-                className="rounded-lg bg-brand-blue/60 px-3 py-1.5 text-xs text-sky-100 hover:bg-brand-accent hover:text-white transition border border-blue-800/60"
-              >
-                Website Development in {area}
-              </button>
-            ))}
+            {CHENNAI_AREAS.map((area) => {
+              const slug = AREA_BLOG_MAP[area] || 'website-development-in-medavakkam';
+              return (
+                <a
+                  key={area}
+                  href={`/blog/${slug}`}
+                  onClick={(e) => handleAreaClick(e, area)}
+                  className="rounded-lg bg-brand-blue/60 px-3 py-1.5 text-xs text-sky-100 hover:bg-brand-accent hover:text-white transition border border-blue-800/60 inline-flex items-center gap-1.5 focus:outline-none"
+                  title={`Website Development in ${area}`}
+                >
+                  <span>Website Development in {area}</span>
+                  <ArrowRight className="h-3 w-3 opacity-60" />
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -174,6 +191,11 @@ export default function Footer({ onNavigate }) {
               <li>
                 <a href="/pricing" onClick={(e) => handleLink(e, 'pricing')} className="hover:text-white transition">
                   Website Pricing Plans
+                </a>
+              </li>
+              <li>
+                <a href="/blog" onClick={(e) => handleLink(e, 'blog')} className="hover:text-white transition text-sky-300 font-semibold">
+                  SEO Blogs &amp; Ranking Guides
                 </a>
               </li>
               <li>

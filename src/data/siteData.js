@@ -102,30 +102,30 @@ export const SEO_PAGES = {
   },
   helpdesk: {
     path: '/helpdesk',
-    title: 'IT Help Desk Software 2026 | Handle 10x More Support Cases – AmigoWebster',
+    title: 'IT Help Desk Software in Chennai & Medavakkam | HelpDesk 2026 – AmigoWebster',
     description:
-      'Discover HelpDesk 2026 by AmigoWebster in Chennai & Medavakkam. Messages from many channels in one place, 60% quicker response time with automations, ticket management & SLA alerts.',
+      'Best IT Help Desk Software in Chennai & Medavakkam by AmigoWebster (https://amigowebster.in/helpdesk). Handle 10x more support cases, ticket management, SLA alerts, email automation & multi-channel support.',
     keywords:
-      'it help desk software chennai, helpdesk ticketing system medavakkam, amigowebster helpdesk, customer support software chennai',
-    h1: 'IT Help Desk – Handle 10x More Support Cases'
+      'it help desk software in chennai, helpdesk software medavakkam, it ticketing system chennai, customer support software chennai, amigowebster helpdesk, help desk ticketing software india, sla monitoring software chennai',
+    h1: 'IT Help Desk Software in Chennai & Medavakkam – Handle 10x More Support Cases'
   },
   billing: {
     path: '/billing-software',
-    title: 'Billing Software 2026 | Streamline Your Business Finances – AmigoWebster',
+    title: 'Billing Software in Medavakkam & Chennai | GST Billing 2026 – AmigoWebster',
     description:
-      'Discover Billing Software 2026 by AmigoWebster. All invoices, payments, and expenses in one place. 70% faster billing with GST-compliant invoicing and smart reports.',
+      'Best GST Billing Software in Medavakkam & Chennai by AmigoWebster (https://amigowebster.in/billing-software). All invoices, payments, appointments, and expenses in one place with 70% faster billing.',
     keywords:
-      'billing software in chennai, gst billing software medavakkam, amigowebster billing software, clinic hospital billing software chennai',
-    h1: 'Billing Software – Streamline Your Business Finances'
+      'billing software in medavakkam, billing software in chennai, gst billing software medavakkam, clinic hospital billing software chennai, amigowebster billing software, pos billing software chennai',
+    h1: 'Billing Software in Medavakkam & Chennai – Streamline Your Business Finances'
   },
   quickcommerce: {
     path: '/quick-commerce-website',
     title: 'Quick Commerce Website Development in Chennai & Medavakkam – AmigoWebster',
     description:
-      'Accelerate your business growth with Quick Commerce 2026 by AmigoWebster. Deliver products in minutes with real-time inventory tracking, automated order management & live delivery tracking.',
+      'Accelerate your business growth with Quick Commerce Website Development in Chennai & Medavakkam by AmigoWebster (https://amigowebster.in/quick-commerce-website). Deliver products in minutes with live tracking.',
     keywords:
       'quick commerce website development chennai, hyperlocal delivery website medavakkam, grocery delivery app chennai, amigowebster quick commerce',
-    h1: 'Quick Commerce Website – Accelerate Your Business Growth'
+    h1: 'Quick Commerce Website Development in Chennai & Medavakkam'
   },
   contact: {
     path: '/contact',
@@ -135,6 +135,15 @@ export const SEO_PAGES = {
     keywords:
       'contact amigowebster, website developers phone number chennai, web design office medavakkam kovilambakkam',
     h1: 'Contact Our Medavakkam, Chennai Web Development Team'
+  },
+  blog: {
+    path: '/blog',
+    title: 'SEO Blogs & Google Ranking Guides | Website Development & HelpDesk Chennai – AmigoWebster',
+    description:
+      'Read expert SEO blogs and guides by AmigoWebster on IT Help Desk Software in Chennai, Website Development in Medavakkam & Chennai, GST Billing Software, and Quick Commerce.',
+    keywords:
+      'amigowebster blog, website development in chennai blog, it help desk software chennai guide, billing software medavakkam guide, website development cost chennai',
+    h1: 'SEO Blogs & Digital Growth Guides for Chennai & Medavakkam'
   }
 };
 
@@ -641,10 +650,10 @@ export const PORTFOLIO_ITEMS = [
 export const PROJECT_SUBPAGES = {
   helpdesk: {
     id: 'helpdesk',
-    badge: 'IT Help Desk 2026',
-    title: 'IT Help Desk',
-    headline: 'Handle 10x More Support Cases with HelpDesk',
-    subheadline: 'Discover HelpDesk 2026',
+    badge: 'IT Help Desk Software in Chennai & Medavakkam',
+    title: 'IT Help Desk Software',
+    headline: 'IT Help Desk Software in Chennai & Medavakkam – Handle 10x More Support Cases',
+    subheadline: 'Discover HelpDesk 2026 by AmigoWebster',
     heroImage: 'https://amigowebster.com/wp-content/uploads/2026/05/1-img-e1779434796527.jpg',
     overview:
       'A helpdesk is a support system that helps users resolve technical issues, answer queries, and provide assistance related to products or services. It acts as the first point of contact between customers or employees and the support team. Commonly used in IT companies, schools, banks, healthcare organizations, and businesses across Chennai & Medavakkam to ensure smooth support operations.',
@@ -863,6 +872,29 @@ export const CHENNAI_AREAS = [
   'Nungambakkam',
   'Porur & Ambattur'
 ];
+
+export const AREA_BLOG_MAP = {
+  'Medavakkam': 'website-development-in-medavakkam',
+  'Kovilambakkam': 'website-development-in-medavakkam',
+  'Nanmangalam': 'website-development-in-pallikaranai-nanmangalam',
+  'Vengambakkam': 'website-development-in-medavakkam',
+  'Pallikaranai': 'website-development-in-pallikaranai-nanmangalam',
+  'Velachery': 'website-development-in-velachery',
+  'Tambaram': 'website-development-in-tambaram-chromepet',
+  'Chromepet': 'website-development-in-tambaram-chromepet',
+  'Selaiyur': 'website-development-in-tambaram-chromepet',
+  'Perumbakkam': 'website-development-in-perumbakkam-sithalapakkam',
+  'Sholinganallur (OMR)': 'website-development-in-omr-sholinganallur',
+  'Thoraipakkam (OMR)': 'website-development-in-omr-sholinganallur',
+  'Madipakkam': 'website-development-in-madipakkam-nanganallur',
+  'Nanganallur': 'website-development-in-madipakkam-nanganallur',
+  'Guindy': 'website-development-in-guindy-porur-ambattur',
+  'Adyar & Thiruvanmiyur': 'website-development-in-t-nagar-adyar',
+  'T. Nagar': 'website-development-in-t-nagar-adyar',
+  'Anna Nagar': 'website-development-in-anna-nagar-nungambakkam',
+  'Nungambakkam': 'website-development-in-anna-nagar-nungambakkam',
+  'Porur & Ambattur': 'website-development-in-guindy-porur-ambattur'
+};
 
 export const MEDAVAKKAM_LANDMARKS = [
   {

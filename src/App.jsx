@@ -9,27 +9,41 @@ import LocalSEOSection from './components/LocalSEOSection';
 import ParallaxShowcase from './components/ParallaxShowcase';
 import PricingSection from './components/PricingSection';
 import PortfolioSection from './components/PortfolioSection';
+import BlogSection from './components/BlogSection';
 import FAQAndContactSection from './components/FAQAndContactSection';
 import Footer from './components/Footer';
 import { SEO_PAGES } from './data/siteData';
 
-function getPageFromPath(pathname) {
+function parseRouteFromPath(pathname) {
   const clean = pathname.replace(/\/+$/, '') || '/';
-  if (clean === '/website' || clean === '/blog-grid' || clean === '/portfolio') return 'portfolio';
-  if (clean === '/helpdesk') return 'helpdesk';
-  if (clean === '/billing-software') return 'billing';
-  if (clean === '/quick-commerce-website') return 'quickcommerce';
-  if (clean === '/about-us' || clean === '/about-us-2' || clean === '/about') return 'about';
+  if (clean.startsWith('/blog/')) {
+    const slug = clean.replace('/blog/', '').trim();
+    return { page: 'blog', blogSlug: slug || null };
+  }
+  if (clean === '/blog') return { page: 'blog', blogSlug: null };
+  if (clean === '/website' || clean === '/blog-grid' || clean === '/portfolio') {
+    return { page: 'portfolio', blogSlug: null };
+  }
+  if (clean === '/helpdesk') return { page: 'helpdesk', blogSlug: null };
+  if (clean === '/billing-software') return { page: 'billing', blogSlug: null };
+  if (clean === '/quick-commerce-website') return { page: 'quickcommerce', blogSlug: null };
+  if (clean === '/about-us' || clean === '/about-us-2' || clean === '/about') {
+    return { page: 'about', blogSlug: null };
+  }
   const match = Object.entries(SEO_PAGES).find(([, cfg]) => cfg.path === clean);
-  return match ? match[0] : 'home';
+  return { page: match ? match[0] : 'home', blogSlug: null };
 }
 
 export default function App() {
-  const [activePage, setActivePage] = useState(() => getPageFromPath(window.location.pathname));
+  const initialRoute = parseRouteFromPath(window.location.pathname);
+  const [activePage, setActivePage] = useState(initialRoute.page);
+  const [activeBlogSlug, setActiveBlogSlug] = useState(initialRoute.blogSlug);
 
   useEffect(() => {
     const onPopState = () => {
-      setActivePage(getPageFromPath(window.location.pathname));
+      const parsed = parseRouteFromPath(window.location.pathname);
+      setActivePage(parsed.page);
+      setActiveBlogSlug(parsed.blogSlug);
     };
     window.addEventListener('popstate', onPopState);
     return () => window.removeEventListener('popstate', onPopState);
@@ -37,8 +51,19 @@ export default function App() {
 
   const isProjectPage = ['portfolio', 'helpdesk', 'billing', 'quickcommerce'].includes(activePage);
 
+  const handleOpenBlog = (slug) => {
+    setActivePage('blog');
+    setActiveBlogSlug(slug);
+    const targetPath = slug ? `/blog/${slug}` : '/blog';
+    if (window.location.pathname !== targetPath) {
+      window.history.pushState({}, '', targetPath);
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const handleNavigate = (pageId) => {
-    // Redirect any legacy chennai/medavakkam click to home local-seo-hub section
+    setActiveBlogSlug(null);
+
     if (pageId === 'chennai' || pageId === 'medavakkam') {
       setActivePage('home');
       window.history.pushState({}, '', '/');
@@ -55,10 +80,10 @@ export default function App() {
       window.history.pushState({}, '', targetConfig.path);
     }
 
-    // Separate dedicated pages scroll to top
     if (
       pageId === 'home' ||
       pageId === 'about' ||
+      pageId === 'blog' ||
       pageId === 'portfolio' ||
       pageId === 'helpdesk' ||
       pageId === 'billing' ||
@@ -68,7 +93,6 @@ export default function App() {
       return;
     }
 
-    // Section navigation (Services, Pricing, Contact) scrolls to section once rendered
     const sectionMap = {
       services: 'services',
       pricing: 'pricing',
@@ -90,7 +114,7 @@ export default function App() {
   return (
     <div className="min-h-screen flex flex-col bg-[#F4F8FD] text-slate-900">
       {/* Dynamic SEO Meta, Canonical & JSON-LD Manager */}
-      <SEOHead activePage={activePage} />
+      <SEOHead activePage={activePage} activeBlogSlug={activeBlogSlug} />
 
       {/* Sticky Header & Navigation */}
       <Navbar activePage={activePage} onNavigate={handleNavigate} />
@@ -98,13 +122,21 @@ export default function App() {
       {/* Main Content Router */}
       <main className="flex-grow">
         {activePage === 'about' ? (
-          /* Dedicated Separate About Us Page */
           <>
             <AboutSection onNavigate={handleNavigate} />
             <FAQAndContactSection />
           </>
+        ) : activePage === 'blog' ? (
+          <>
+            <BlogSection
+              isFullPage={true}
+              activeBlogSlug={activeBlogSlug}
+              onNavigate={handleNavigate}
+              onOpenBlog={handleOpenBlog}
+            />
+            <FAQAndContactSection />
+          </>
         ) : isProjectPage ? (
-          /* Dedicated Separate Projects Page (WebSite 34+, IT Help Desk, Billing Software, Quick Commerce) */
           <>
             <PortfolioSection
               isFullPage={true}
@@ -114,7 +146,6 @@ export default function App() {
             <FAQAndContactSection />
           </>
         ) : (
-          /* Home Page with Full Keywords ("Website Development in Chennai" & "Website Development in Medavakkam") */
           <>
             <HeroSection activePage="home" onNavigate={handleNavigate} />
             <HomeBentoShowcase onNavigate={handleNavigate} />
@@ -123,13 +154,19 @@ export default function App() {
             <ParallaxShowcase onNavigate={handleNavigate} />
             <PortfolioSection isFullPage={false} activeSubpage="portfolio" onNavigate={handleNavigate} />
             <PricingSection />
+            <BlogSection
+              isFullPage={false}
+              activeBlogSlug={null}
+              onNavigate={handleNavigate}
+              onOpenBlog={handleOpenBlog}
+            />
             <FAQAndContactSection />
           </>
         )}
       </main>
 
       {/* Rich SEO Footer with Local NAP & Area Links */}
-      <Footer onNavigate={handleNavigate} />
+      <Footer onNavigate={handleNavigate} onOpenBlog={handleOpenBlog} />
     </div>
   );
 }

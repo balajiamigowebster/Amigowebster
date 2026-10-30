@@ -234,6 +234,18 @@ export default function Navbar({ activePage, onNavigate }) {
           </a>
 
           <a
+            href="/blog"
+            onClick={(e) => handleNavClick(e, 'blog')}
+            className={`px-4 py-2 rounded-lg text-sm font-semibold transition ${
+              activePage === 'blog'
+                ? 'bg-brand-navy text-white shadow-sm'
+                : 'text-slate-700 hover:bg-sky-50 hover:text-brand-navy'
+            }`}
+          >
+            Blogs
+          </a>
+
+          <a
             href="/contact"
             onClick={(e) => handleNavClick(e, 'contact')}
             className={`px-4 py-2 rounded-lg text-sm font-semibold transition ${
@@ -333,6 +345,15 @@ export default function Navbar({ activePage, onNavigate }) {
               }`}
             >
               Pricing
+            </a>
+            <a
+              href="/blog"
+              onClick={(e) => handleNavClick(e, 'blog')}
+              className={`rounded-xl px-4 py-2.5 text-sm font-semibold ${
+                activePage === 'blog' ? 'bg-brand-navy text-white' : 'text-slate-700 hover:bg-sky-50'
+              }`}
+            >
+              Blogs
             </a>
             <a
               href="/contact"
