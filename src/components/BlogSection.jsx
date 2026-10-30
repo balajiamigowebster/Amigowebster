@@ -135,11 +135,15 @@ export default function BlogSection({
         {/* Main Article Body */}
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 -mt-8 relative z-10">
           {/* Featured Screenshot Card */}
-          <div className="overflow-hidden rounded-3xl bg-brand-navy p-2.5 shadow-2xl ring-1 ring-blue-200">
+          <div className="overflow-hidden rounded-3xl bg-slate-900 p-2.5 shadow-2xl ring-1 ring-blue-200">
             <img
               itemProp="image"
               src={activeArticle.heroImage}
               alt={`${activeArticle.title} - AmigoWebster Chennai & Medavakkam`}
+              onError={(e) => {
+                e.currentTarget.onerror = null;
+                e.currentTarget.src = 'https://amigowebster.com/wp-content/uploads/2026/10/Screenshot-2026-10-15-144753-1024x488.png';
+              }}
               className="w-full max-h-[420px] object-cover object-top rounded-2xl"
             />
           </div>
@@ -439,6 +443,10 @@ export default function BlogSection({
                         src={post.heroImage}
                         alt={`${post.title} - AmigoWebster`}
                         loading="lazy"
+                        onError={(e) => {
+                          e.currentTarget.onerror = null;
+                          e.currentTarget.src = 'https://amigowebster.com/wp-content/uploads/2026/10/Screenshot-2026-10-15-144753-1024x488.png';
+                        }}
                         className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       />
                       <div className="absolute top-3 left-3">
