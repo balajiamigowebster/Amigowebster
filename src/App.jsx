@@ -40,6 +40,20 @@ export default function App() {
   const [activeBlogSlug, setActiveBlogSlug] = useState(initialRoute.blogSlug);
 
   useEffect(() => {
+    // Smoothly dismiss the branded pre-render loading screen once React is mounted
+    const loader = document.getElementById('app-loading-screen');
+    if (loader) {
+      loader.style.opacity = '0';
+      loader.style.pointerEvents = 'none';
+      setTimeout(() => {
+        if (loader && loader.parentNode) {
+          loader.parentNode.removeChild(loader);
+        }
+      }, 400);
+    }
+  }, []);
+
+  useEffect(() => {
     const onPopState = () => {
       const parsed = parseRouteFromPath(window.location.pathname);
       setActivePage(parsed.page);
