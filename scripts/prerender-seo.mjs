@@ -158,16 +158,50 @@ const subpages = [
       'billing software in medavakkam, billing software in chennai, gst billing software medavakkam, clinic hospital billing software chennai, amigowebster billing software, pos billing software chennai',
     schema: {
       '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'AmigoWebster GST Billing Software 2026',
-      applicationCategory: 'BusinessApplication',
-      url: 'https://amigowebster.in/billing-software'
+      '@graph': [
+        {
+          '@type': 'SoftwareApplication',
+          name: 'AmigoWebster GST Billing Software 2026',
+          applicationCategory: 'BusinessApplication',
+          operatingSystem: 'Web, Cloud, Windows, Android, iOS',
+          url: 'https://amigowebster.in/billing-software',
+          description:
+            'Cloud GST Billing Software in Medavakkam & Chennai. 70% faster billing, instant GST invoices, inventory management, clinic doctor appointment scheduling, and profit reports.',
+          offers: {
+            '@type': 'Offer',
+            price: '11999',
+            priceCurrency: 'INR',
+            availability: 'https://schema.org/InStock'
+          },
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: '4.9',
+            bestRating: '5',
+            ratingCount: '74'
+          }
+        },
+        {
+          '@type': 'FAQPage',
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'What is the best billing software in Medavakkam for retail and clinics?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'AmigoWebster Billing Software 2026 is the top-rated GST billing and retail/clinic management software in Medavakkam, offering barcode billing, thermal receipt printing, patient appointment records, and GST filing reports.'
+              }
+            }
+          ]
+        }
+      ]
     },
     bodyHtml: `
       <main>
         <article>
           <h1>Billing Software in Medavakkam &amp; Chennai – Streamline Your Business Finances</h1>
           <p>Cloud-ready GST Billing &amp; Practice/Retail Management Software for retail shops, clinics, and hospitals in Medavakkam and Chennai.</p>
+          <p><a href="/blog/gst-billing-software-in-medavakkam-chennai">Read Complete Guide: GST Billing Software in Medavakkam &amp; Chennai</a></p>
+          <p><a href="/">Return to AmigoWebster: Website Development in Medavakkam &amp; Chennai</a></p>
         </article>
       </main>`
   },
@@ -260,6 +294,117 @@ const subpages = [
             ${BLOG_POSTS.map((b) => `<li><a href="${b.path}">${b.title}</a> — ${b.excerpt}</li>`).join('\n            ')}
           </ul>
         </section>
+      </main>`
+  },
+  {
+    dir: 'pricing',
+    url: 'https://amigowebster.in/pricing',
+    title: 'Website Development Cost in Chennai & Medavakkam (2026 Price List) – AmigoWebster',
+    description:
+      'Transparent 2026 Website Development Cost in Chennai: ₹7,000 Starter Single-Page Website, ₹11,999 Corporate Business Website & ₹19,999 E-Commerce Store with Domain, Hosting & Free SSL.',
+    keywords:
+      'website development cost in chennai, low cost website design chennai, 7000 website package chennai, business website price in chennai, website development in medavakkam, web design cost chennai 2026',
+    schema: {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'Product',
+          name: 'Website Development in Chennai & Medavakkam',
+          description:
+            'Professional Website Development in Chennai & Medavakkam by AmigoWebster. Transparent pricing: ₹7,000 Starter, ₹11,999 Business, ₹19,999 E-Commerce.',
+          brand: {
+            '@type': 'Brand',
+            name: 'AmigoWebster'
+          },
+          offers: {
+            '@type': 'AggregateOffer',
+            priceCurrency: 'INR',
+            lowPrice: '7000',
+            highPrice: '19999',
+            offerCount: '3'
+          },
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: '4.9',
+            bestRating: '5',
+            reviewCount: '148'
+          }
+        },
+        {
+          '@type': 'FAQPage',
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'What is the average website development cost in Chennai?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'At AmigoWebster, website development cost in Chennai starts from ₹7,000 for a Single-Page Starter Website, ₹11,999 for a 5-12 Page Corporate Business Website with SEO, and ₹19,999 for custom E-Commerce stores.'
+              }
+            },
+            {
+              '@type': 'Question',
+              name: 'Are domain, hosting, and SSL included in the ₹7,000 package?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes! Both the ₹7,000 Starter and ₹11,999 Corporate packages include 1 year of high-speed cloud hosting, free SSL security certificate, domain registration, and mobile-responsive UI with zero hidden fees.'
+              }
+            }
+          ]
+        }
+      ]
+    },
+    bodyHtml: `
+      <main>
+        <article>
+          <h1>Website Development Cost in Chennai &amp; Medavakkam (2026 Transparent Packages)</h1>
+          <p>Confused by wildly different website quotes in Chennai? Here is a transparent, itemized 2026 price guide comparing ₹7,000 Starter Websites, ₹11,999 Corporate SEO Websites, and ₹19,999 E-Commerce Stores by AmigoWebster.</p>
+          <section>
+            <h2>Complete 2026 Website Development Pricing Tiers</h2>
+            <ul>
+              <li><strong>1. Starter Single-Page Website (₹7,000 / year):</strong> Best for local startups, clinics, and shops in Medavakkam &amp; Chennai. Delivered in 3–5 days with Free Domain (.in/.com), 1 Year Cloud Hosting &amp; WhatsApp CTA.</li>
+              <li><strong>2. Professional Business &amp; SEO Website (₹11,999):</strong> 5–12 custom pages, React JS or WordPress CMS, advanced on-page SEO &amp; JSON-LD schema, domain + hosting + SSL. Delivered in 7–12 days.</li>
+              <li><strong>3. E-Commerce &amp; Custom Web App (₹19,999 onwards):</strong> Unlimited products, Razorpay/UPI checkout, automated GST invoicing, and admin analytics dashboard. Delivered in 2–3 weeks.</li>
+            </ul>
+          </section>
+          <p><a href="/blog/website-development-cost-in-chennai">Read Complete 2026 Price Comparison Guide: Website Development Cost in Chennai</a></p>
+          <p><a href="/">Return to AmigoWebster Home: Website Development in Chennai &amp; Medavakkam</a></p>
+        </article>
+      </main>`
+  },
+  {
+    dir: 'services',
+    url: 'https://amigowebster.in/services',
+    title: 'Website Development Services in Chennai & Medavakkam – AmigoWebster',
+    description:
+      'Full-stack Website Development Services in Chennai & Medavakkam: Custom React JS, WordPress, E-Commerce, Local SEO & GST Billing Software from ₹7,000.',
+    keywords:
+      'website development services chennai, web design services medavakkam, ecommerce development chennai, react js developers chennai',
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      name: 'Website Development Services in Chennai & Medavakkam',
+      provider: {
+        '@type': 'LocalBusiness',
+        name: 'AmigoWebster'
+      },
+      areaServed: {
+        '@type': 'City',
+        name: 'Chennai'
+      }
+    },
+    bodyHtml: `
+      <main>
+        <article>
+          <h1>Full-Stack Website Development Services in Chennai &amp; Medavakkam</h1>
+          <p>AmigoWebster provides end-to-end digital solutions for growing businesses, startups, clinics, and manufacturers across Chennai and Medavakkam.</p>
+          <ul>
+            <li><a href="/">Website Development in Chennai &amp; Medavakkam</a></li>
+            <li><a href="/pricing">Website Development Cost in Chennai (₹7,000 / ₹11,999 / ₹19,999)</a></li>
+            <li><a href="/helpdesk">IT Help Desk Software 2026</a></li>
+            <li><a href="/billing-software">Billing Software in Medavakkam</a></li>
+            <li><a href="/quick-commerce-website">Quick Commerce Website Development</a></li>
+          </ul>
+        </article>
       </main>`
   }
 ];
