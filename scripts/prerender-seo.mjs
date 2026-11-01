@@ -494,29 +494,87 @@ for (const post of BLOG_POSTS) {
   });
 }
 
-// 3. Backward Compatibility Redirect Page for Legacy Combined Slugs
-writeStaticSeoPage({
-  dir: 'blog/website-development-in-t-nagar-adyar',
-  url: 'https://amigowebster.in/blog/website-development-in-t-nagar',
-  title: 'Website Development in T Nagar & Adyar – AmigoWebster',
-  description: 'Looking for Website Development in T Nagar or Adyar? Explore our dedicated guides for retail e-commerce in T Nagar and business web design in Adyar.',
-  keywords: 'website development in t nagar, website development in adyar',
-  schema: {
-    '@context': 'https://schema.org',
-    '@type': 'WebPage',
-    name: 'Website Development in T Nagar & Adyar',
-    url: 'https://amigowebster.in/blog/website-development-in-t-nagar'
+// 3. Backward Compatibility Redirect Pages for Legacy Combined Slugs
+const legacyRedirects = [
+  {
+    dir: 'blog/website-development-in-t-nagar-adyar',
+    target: '/blog/website-development-in-t-nagar',
+    title: 'Website Development in T Nagar & Adyar',
+    links: [
+      { url: '/blog/website-development-in-t-nagar', label: 'Website Development in T Nagar' },
+      { url: '/blog/website-development-in-adyar', label: 'Website Development in Adyar' }
+    ]
   },
-  bodyHtml: `
-    <main>
-      <article>
-        <h1>Website Development in T Nagar &amp; Adyar</h1>
-        <p>This guide has been split into two dedicated local portals for higher accuracy and focused SEO:</p>
-        <ul>
-          <li><a href="/blog/website-development-in-t-nagar">Website Development in T Nagar (Retail &amp; E-Commerce Web Design)</a></li>
-          <li><a href="/blog/website-development-in-adyar">Website Development in Adyar (Local SEO &amp; Business Web Design)</a></li>
-        </ul>
-        <script>window.location.replace("/blog/website-development-in-t-nagar");</script>
-      </article>
-    </main>`
-});
+  {
+    dir: 'blog/website-development-in-omr-sholinganallur',
+    target: '/blog/website-development-in-omr',
+    title: 'Website Development in OMR & Sholinganallur',
+    links: [
+      { url: '/blog/website-development-in-omr', label: 'Website Development in OMR' },
+      { url: '/blog/website-development-in-sholinganallur', label: 'Website Development in Sholinganallur' }
+    ]
+  },
+  {
+    dir: 'blog/website-development-in-tambaram-chromepet',
+    target: '/blog/website-development-in-tambaram',
+    title: 'Website Development in Tambaram & Chromepet',
+    links: [
+      { url: '/blog/website-development-in-tambaram', label: 'Website Development in Tambaram' },
+      { url: '/blog/website-development-in-chromepet', label: 'Website Development in Chromepet' }
+    ]
+  },
+  {
+    dir: 'blog/website-development-in-perumbakkam-sithalapakkam',
+    target: '/blog/website-development-in-perumbakkam',
+    title: 'Website Development in Perumbakkam & Sithalapakkam',
+    links: [
+      { url: '/blog/website-development-in-perumbakkam', label: 'Website Development in Perumbakkam' }
+    ]
+  },
+  {
+    dir: 'blog/website-development-in-guindy-porur-ambattur',
+    target: '/blog/website-development-in-guindy',
+    title: 'Website Development in Guindy, Porur & Ambattur',
+    links: [
+      { url: '/blog/website-development-in-guindy', label: 'Website Development in Guindy' },
+      { url: '/blog/website-development-in-porur', label: 'Website Development in Porur' },
+      { url: '/blog/website-development-in-ambattur', label: 'Website Development in Ambattur' }
+    ]
+  },
+  {
+    dir: 'blog/website-development-in-anna-nagar-nungambakkam',
+    target: '/blog/website-development-in-anna-nagar',
+    title: 'Website Development in Anna Nagar & Nungambakkam',
+    links: [
+      { url: '/blog/website-development-in-anna-nagar', label: 'Website Development in Anna Nagar' },
+      { url: '/blog/website-development-in-nungambakkam', label: 'Website Development in Nungambakkam' }
+    ]
+  }
+];
+
+for (const redir of legacyRedirects) {
+  writeStaticSeoPage({
+    dir: redir.dir,
+    url: `https://amigowebster.in${redir.target}`,
+    title: `${redir.title} – AmigoWebster`,
+    description: `Looking for ${redir.title}? Explore our separated, dedicated local web development guides for Chennai.`,
+    keywords: 'website development in chennai',
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: redir.title,
+      url: `https://amigowebster.in${redir.target}`
+    },
+    bodyHtml: `
+      <main>
+        <article>
+          <h1>${redir.title}</h1>
+          <p>This guide has been upgraded into dedicated neighborhood portals for precision SEO:</p>
+          <ul>
+            ${redir.links.map(l => `<li><a href="${l.url}">${l.label}</a></li>`).join('\n            ')}
+          </ul>
+          <script>window.location.replace("${redir.target}");</script>
+        </article>
+      </main>`
+  });
+}

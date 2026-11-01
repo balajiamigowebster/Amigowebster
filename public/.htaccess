@@ -1,6 +1,11 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+  RewriteRule ^blog/website-development-in-omr-sholinganallur/?$ /blog/website-development-in-omr [R=301,L]
+  RewriteRule ^blog/website-development-in-tambaram-chromepet/?$ /blog/website-development-in-tambaram [R=301,L]
+  RewriteRule ^blog/website-development-in-perumbakkam-sithalapakkam/?$ /blog/website-development-in-perumbakkam [R=301,L]
+  RewriteRule ^blog/website-development-in-guindy-porur-ambattur/?$ /blog/website-development-in-guindy [R=301,L]
+  RewriteRule ^blog/website-development-in-anna-nagar-nungambakkam/?$ /blog/website-development-in-anna-nagar [R=301,L]
   RewriteRule ^blog/website-development-in-t-nagar-adyar/?$ /blog/website-development-in-t-nagar [R=301,L]
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
