@@ -493,3 +493,30 @@ for (const post of BLOG_POSTS) {
       </main>`
   });
 }
+
+// 3. Backward Compatibility Redirect Page for Legacy Combined Slugs
+writeStaticSeoPage({
+  dir: 'blog/website-development-in-t-nagar-adyar',
+  url: 'https://amigowebster.in/blog/website-development-in-t-nagar',
+  title: 'Website Development in T Nagar & Adyar – AmigoWebster',
+  description: 'Looking for Website Development in T Nagar or Adyar? Explore our dedicated guides for retail e-commerce in T Nagar and business web design in Adyar.',
+  keywords: 'website development in t nagar, website development in adyar',
+  schema: {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Website Development in T Nagar & Adyar',
+    url: 'https://amigowebster.in/blog/website-development-in-t-nagar'
+  },
+  bodyHtml: `
+    <main>
+      <article>
+        <h1>Website Development in T Nagar &amp; Adyar</h1>
+        <p>This guide has been split into two dedicated local portals for higher accuracy and focused SEO:</p>
+        <ul>
+          <li><a href="/blog/website-development-in-t-nagar">Website Development in T Nagar (Retail &amp; E-Commerce Web Design)</a></li>
+          <li><a href="/blog/website-development-in-adyar">Website Development in Adyar (Local SEO &amp; Business Web Design)</a></li>
+        </ul>
+        <script>window.location.replace("/blog/website-development-in-t-nagar");</script>
+      </article>
+    </main>`
+});

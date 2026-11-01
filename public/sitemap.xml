@@ -133,8 +133,14 @@
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://amigowebster.in/blog/website-development-in-t-nagar-adyar</loc>
-    <lastmod>2026-10-24</lastmod>
+    <loc>https://amigowebster.in/blog/website-development-in-t-nagar</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://amigowebster.in/blog/website-development-in-adyar</loc>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>

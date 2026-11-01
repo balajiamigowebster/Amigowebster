@@ -889,8 +889,9 @@ export const AREA_BLOG_MAP = {
   'Madipakkam': 'website-development-in-madipakkam-nanganallur',
   'Nanganallur': 'website-development-in-madipakkam-nanganallur',
   'Guindy': 'website-development-in-guindy-porur-ambattur',
-  'Adyar & Thiruvanmiyur': 'website-development-in-t-nagar-adyar',
-  'T. Nagar': 'website-development-in-t-nagar-adyar',
+  'Adyar': 'website-development-in-adyar',
+  'Adyar & Thiruvanmiyur': 'website-development-in-adyar',
+  'T. Nagar': 'website-development-in-t-nagar',
   'Anna Nagar': 'website-development-in-anna-nagar-nungambakkam',
   'Nungambakkam': 'website-development-in-anna-nagar-nungambakkam',
   'Porur & Ambattur': 'website-development-in-guindy-porur-ambattur'
