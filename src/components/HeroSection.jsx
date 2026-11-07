@@ -72,7 +72,7 @@ export default function HeroSection({ onNavigate }) {
   const marqueeKeywords = [
     '★ Website Development in Chennai',
     '★ Website Development in Medavakkam',
-    '★ 34+ Live Client Websites Delivered',
+    '★ 37+ Live Client Websites Delivered',
     '★ React JS & Next-Gen Web Apps',
     '★ Starter Websites from ₹7,000/yr',
     '★ Quick Commerce & E-Commerce Stores',
@@ -159,7 +159,7 @@ export default function HeroSection({ onNavigate }) {
                   </div>
                   <div>
                     <span className="font-bold block text-white">13+ Yrs Combined Experience</span>
-                    <span className="text-[11px] text-blue-200/80">250+ Websites & 34+ Featured Portals</span>
+                    <span className="text-[11px] text-blue-200/80">250+ Websites & 37+ Featured Portals</span>
                   </div>
                 </div>
 
@@ -189,7 +189,7 @@ export default function HeroSection({ onNavigate }) {
                   className="inline-flex items-center gap-2 rounded-2xl bg-blue-900/80 px-6 py-4 text-sm sm:text-base font-bold text-white ring-1 ring-sky-400/40 backdrop-blur hover:bg-blue-800 transition transform hover:-translate-y-0.5"
                 >
                   <Layers className="h-4 w-4 text-sky-300" />
-                  <span>Explore 34+ Live Projects</span>
+                  <span>Explore 37+ Live Projects</span>
                 </button>
 
                 <a
@@ -213,7 +213,7 @@ export default function HeroSection({ onNavigate }) {
               className="hidden sm:flex absolute -top-5 -left-5 z-20 items-center gap-2 rounded-2xl bg-[#061529] border border-sky-400/40 px-3.5 py-2 text-xs font-bold text-white shadow-2xl backdrop-blur-md animate-float-slow"
             >
               <Sparkles className="h-4 w-4 text-sky-400" />
-              <span>34+ Live Websites Built</span>
+              <span>37+ Live Websites Built</span>
             </div>
 
             {/* Floating Parallax Orbit Badge Bottom-Right */}
@@ -306,7 +306,7 @@ export default function HeroSection({ onNavigate }) {
                           <p className="text-[11px] text-sky-200">{currentProject.industry}</p>
                         </div>
                         <span className="rounded-xl bg-blue-950/90 px-3 py-1.5 text-xs font-bold text-white ring-1 ring-sky-400/40 group-hover:bg-brand-accent transition">
-                          View All 34 →
+                          View All 37 →
                         </span>
                       </div>
                     </div>

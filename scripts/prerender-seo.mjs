@@ -239,7 +239,7 @@ const subpages = [
     url: 'https://amigowebster.in/website',
     title: 'Website Design Projects & Live Screenshots | AmigoWebster Chennai & Medavakkam',
     description:
-      'Explore all 34+ live website development projects with full screenshots by AmigoWebster in Chennai & Medavakkam.',
+      'Explore all 37+ live website development projects with full screenshots by AmigoWebster in Chennai & Medavakkam.',
     keywords:
       'website development projects chennai, amigowebster portfolio, web design examples medavakkam chennai',
     schema: {
@@ -252,7 +252,7 @@ const subpages = [
       <main>
         <article>
           <h1>Our Complete Website Design Projects &amp; Live Screenshots in Chennai &amp; Medavakkam</h1>
-          <p>Browse 34+ live client websites designed, developed, and SEO-optimized by AmigoWebster in Medavakkam and Chennai.</p>
+          <p>Browse 37+ live client websites designed, developed, and SEO-optimized by AmigoWebster in Medavakkam and Chennai.</p>
         </article>
       </main>`
   },

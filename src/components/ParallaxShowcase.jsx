@@ -81,7 +81,7 @@ export default function ParallaxShowcase({ onNavigate }) {
                   className="inline-flex items-center gap-2 rounded-xl bg-white/10 px-5 py-3.5 text-sm font-semibold text-white ring-1 ring-white/20 backdrop-blur hover:bg-white/20 transition"
                 >
                   <MapPin className="h-4 w-4 text-amber-400" />
-                  <span>Explore 34+ Live Projects</span>
+                  <span>Explore 37+ Live Projects</span>
                 </button>
               </div>
             </Reveal>

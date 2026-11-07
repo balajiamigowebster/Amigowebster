@@ -58,7 +58,7 @@ export default function AboutSection({ onNavigate }) {
                   onClick={() => onNavigate('portfolio')}
                   className="inline-flex items-center gap-2 rounded-xl bg-brand-accent px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-500/25 hover:bg-brand-accentHover transition"
                 >
-                  <span>Explore All 34+ Website Projects</span>
+                  <span>Explore All 37+ Website Projects</span>
                   <ArrowRight className="h-4 w-4" />
                 </button>
                 <a

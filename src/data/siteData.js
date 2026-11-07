@@ -630,14 +630,44 @@ export const PORTFOLIO_ITEMS = [
     fullScreenshot: 'https://amigowebster.com/wp-content/uploads/2026/10/Screenshot-2026-10-15-165438.png'
   },
   {
-    id: 'hema-sir-classes',
-    title: 'HEMA SIR CLASSES',
-    domain: 'hemasirclass.in',
-    liveUrl: 'https://hemasirclass.in/',
-    category: 'Education & Healthcare',
-    industry: 'Academic Coaching & Online Learning Institute',
-    screenshot: 'https://amigowebster.com/wp-content/uploads/2026/10/Screenshot-2026-10-15-165427-1024x461.png',
-    fullScreenshot: 'https://amigowebster.com/wp-content/uploads/2026/10/Screenshot-2026-10-15-165427.png'
+    id: 'india-wears',
+    title: 'INDIA WEARS',
+    domain: 'indiawears.com',
+    liveUrl: 'https://www.indiawears.com/',
+    category: 'Food, Retail & E-Commerce',
+    industry: 'Luxury Silk Sarees & Ethnic Fashion E-Commerce',
+    screenshot: '/portfolio/indiawears.png',
+    fullScreenshot: '/portfolio/indiawears.png'
+  },
+  {
+    id: 'thoranam',
+    title: 'THORANAM',
+    domain: 'thoranam.co',
+    liveUrl: 'https://thoranam.co/',
+    category: 'Food, Retail & E-Commerce',
+    industry: 'Luxury Saree Boutique & Designer Handloom Weaves',
+    screenshot: '/portfolio/thoranam.png',
+    fullScreenshot: '/portfolio/thoranam.png'
+  },
+  {
+    id: 'dharmic-life-foundation',
+    title: 'DHARMIC LIFE FOUNDATION',
+    domain: 'dharmiclifefoundation.com',
+    liveUrl: 'https://dharmiclifefoundation.com/',
+    category: 'Media, Events & Lifestyle',
+    industry: 'Non-Profit Charitable Trust & Humanitarian Foundation',
+    screenshot: '/portfolio/dharmiclife.png',
+    fullScreenshot: '/portfolio/dharmiclife.png'
+  },
+  {
+    id: 'gga-mep-consultant',
+    title: 'GGA MEP CONSULTANT',
+    domain: 'ggamepconsultant.com',
+    liveUrl: 'https://ggamepconsultant.com/',
+    category: 'Industrial, Export & B2B',
+    industry: 'MEP Design, HVAC, Electrical & Building Services Consultancy',
+    screenshot: '/portfolio/ggamep.png',
+    fullScreenshot: '/portfolio/ggamep.png'
   }
 ];
 

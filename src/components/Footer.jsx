@@ -111,7 +111,7 @@ export default function Footer({ onNavigate, onOpenBlog }) {
                   className="hover:text-sky-300 transition flex items-center gap-1.5"
                 >
                   <ArrowRight className="h-3.5 w-3.5 text-sky-400" />
-                  WebSite Design (34+ Live Projects)
+                  WebSite Design (37+ Live Projects)
                 </a>
               </li>
               <li>
@@ -185,7 +185,7 @@ export default function Footer({ onNavigate, onOpenBlog }) {
               </li>
               <li>
                 <a href="/website" onClick={(e) => handleLink(e, 'portfolio')} className="hover:text-white transition">
-                  Website Projects (34+ Screenshots)
+                  Website Projects (37+ Screenshots)
                 </a>
               </li>
               <li>

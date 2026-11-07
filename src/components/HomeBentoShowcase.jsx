@@ -37,7 +37,7 @@ export default function HomeBentoShowcase({ onNavigate }) {
             onClick={() => onNavigate('portfolio')}
             className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-extrabold text-brand-accent hover:text-brand-navy transition"
           >
-            <span>Browse All 34+ Live Website Screenshots</span>
+            <span>Browse All 37+ Live Website Screenshots</span>
             <ArrowRight className="h-4 w-4" />
           </button>
         </div>
@@ -149,7 +149,7 @@ export default function HomeBentoShowcase({ onNavigate }) {
                     onClick={() => onNavigate('portfolio')}
                     className="inline-flex items-center gap-2 rounded-xl bg-brand-accent px-5 py-2.5 text-xs sm:text-sm font-bold text-white hover:bg-brand-accentHover transition shadow-lg"
                   >
-                    <span>Explore 34+ Website Projects</span>
+                    <span>Explore 37+ Website Projects</span>
                     <ArrowRight className="h-4 w-4" />
                   </button>
                   <button

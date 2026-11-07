@@ -46,7 +46,7 @@ export default function PortfolioSection({
     {
       id: 'portfolio',
       label: 'WebSite Design',
-      badge: '34+ Live',
+      badge: `${PORTFOLIO_ITEMS.length}+ Live`,
       icon: Globe,
       desc: 'Live Client Websites & Screenshots'
     },
@@ -522,7 +522,7 @@ export default function PortfolioSection({
                         setSearchQuery(e.target.value);
                         setSelectedIndex(null);
                       }}
-                      placeholder="Search 34 projects (e.g. Madhu, Kavitha)..."
+                      placeholder={`Search ${PORTFOLIO_ITEMS.length} projects (e.g. India Wears, Thoranam, Madhu)...`}
                       className="w-full rounded-xl border border-slate-200 bg-white pl-10 pr-4 py-2.5 text-xs font-medium text-slate-800 shadow-sm focus:border-brand-accent focus:outline-none"
                     />
                   </div>

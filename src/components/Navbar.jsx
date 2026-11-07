@@ -23,7 +23,7 @@ export default function Navbar({ activePage, onNavigate }) {
     {
       id: 'portfolio',
       label: 'WebSite Design',
-      desc: '34+ Live Client Websites & Screenshots',
+      desc: '37+ Live Client Websites & Screenshots',
       href: '/website',
       icon: Globe
     },
@@ -160,7 +160,7 @@ export default function Navbar({ activePage, onNavigate }) {
                   isProjectSubpage ? 'bg-brand-accent text-white' : 'bg-sky-100 text-brand-accent'
                 }`}
               >
-                34+
+                37+
               </span>
               <ChevronDown
                 className={`h-4 w-4 transition-transform duration-200 ${projectsDropdownOpen ? 'rotate-180' : ''}`}
