@@ -82,6 +82,33 @@ export default function LocalSEOSection({ activePage, onNavigate }) {
           </div>
         </Reveal>
 
+        {/* Near Me Quick-Intent Feature Bar */}
+        <Reveal direction="up" delay={50}>
+          <div className="mt-8 rounded-2xl bg-gradient-to-r from-brand-navy via-slate-900 to-brand-navy p-4 sm:p-5 text-white shadow-lg flex flex-col md:flex-row items-center justify-between gap-4 border border-blue-900/50">
+            <div className="flex items-center gap-3">
+              <div className="h-10 w-10 rounded-xl bg-brand-accent/20 border border-brand-accent/30 flex items-center justify-center shrink-0">
+                <Compass className="h-5 w-5 text-brand-accent" />
+              </div>
+              <div>
+                <div className="text-sm font-bold text-white flex items-center gap-2">
+                  <span>Looking for a Website Designer Near Me or Website Development Near Me?</span>
+                  <span className="hidden sm:inline-block rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-extrabold px-2 py-0.5 border border-emerald-500/30">Doorstep Visits</span>
+                </div>
+                <p className="text-xs text-slate-300 mt-0.5">
+                  In-person meetings across Chromepet, Tambaram, Medavakkam, OMR, Velachery, Guindy &amp; all Chennai neighborhoods.
+                </p>
+              </div>
+            </div>
+            <a
+              href="/blog/website-development-near-me"
+              className="inline-flex items-center gap-1.5 rounded-xl bg-brand-accent px-4 py-2 text-xs font-bold text-white hover:bg-brand-accentHover transition shrink-0 shadow-sm"
+            >
+              <span>Explore Near Me Guide</span>
+              <ArrowRight className="h-3.5 w-3.5" />
+            </a>
+          </div>
+        </Reveal>
+
         {/* Two-Column Semantic SEO Pillar Blocks */}
         <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-2">
           {/* Pillar 1: Website Development in Chennai */}

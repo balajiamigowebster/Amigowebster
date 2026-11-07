@@ -470,6 +470,43 @@ for (const post of BLOG_POSTS) {
             '@id': `https://amigowebster.in${post.path}`
           }
         },
+        {
+          '@type': 'ProfessionalService',
+          '@id': 'https://amigowebster.in/#business',
+          name: 'AmigoWebster - Website Designer & Web Development Studio',
+          url: 'https://amigowebster.in',
+          telephone: '+919445332233',
+          priceRange: '₹7,000 - ₹50,000',
+          image: 'https://amigowebster.in/favicon-512x512.png',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: 'No. 9 & 10, S4, Second Floor, Sudarkodi Apartments, Manikandan Nagar 1st Street, Kovilambakkam',
+            addressLocality: 'Medavakkam, Chennai',
+            addressRegion: 'Tamil Nadu',
+            postalCode: '600117',
+            addressCountry: 'IN'
+          },
+          geo: {
+            '@type': 'GeoCoordinates',
+            latitude: 12.9171,
+            longitude: 80.1923
+          },
+          areaServed: [
+            'Medavakkam', 'Kovilambakkam', 'Chromepet', 'Tambaram', 'Pallikaranai',
+            'Perumbakkam', 'Velachery', 'OMR', 'Sholinganallur', 'Guindy', 'Porur',
+            'Ambattur', 'Anna Nagar', 'Nungambakkam', 'T Nagar', 'Adyar', 'Chennai'
+          ],
+          hasOfferCatalog: {
+            '@type': 'OfferCatalog',
+            name: 'Web Design and Development Services',
+            itemListElement: [
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Website Designer Near Me' } },
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Website Development Near Me' } },
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Website Development in Chennai' } },
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'E-Commerce Website Development' } }
+            ]
+          }
+        },
         ...(post.faqs && post.faqs.length > 0
           ? [
               {
