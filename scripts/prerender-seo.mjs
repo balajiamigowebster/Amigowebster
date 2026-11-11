@@ -100,25 +100,25 @@ const subpages = [
   {
     dir: 'helpdesk',
     url: 'https://amigowebster.in/helpdesk',
-    title: 'IT Help Desk Software in Chennai & Medavakkam | HelpDesk 2026 – AmigoWebster',
+    title: 'IT Helpdesk & Helpdesk Software in Chennai | IT Help Desk Portal – AmigoWebster',
     description:
-      'Best IT Help Desk Software in Chennai & Medavakkam by AmigoWebster (https://amigowebster.in/helpdesk). Handle 10x more support cases, ticket management, SLA alerts, email automation & multi-channel support.',
+      'Best IT Helpdesk and Helpdesk Software in Chennai & Medavakkam by AmigoWebster (https://amigowebster.in/helpdesk). Automate ticket management, SLA tracking, IT support desk workflows & customer support.',
     keywords:
-      'it help desk software in chennai, helpdesk software medavakkam, it ticketing system chennai, customer support software chennai, amigowebster helpdesk, help desk ticketing software india, sla monitoring software chennai',
+      'it helpdesk, helpdesk, helpdesk software, it help desk software in chennai, it help desk medavakkam, it ticketing system chennai, customer support software chennai, amigowebster helpdesk, help desk ticketing software india, sla monitoring software chennai',
     schema: {
       '@context': 'https://schema.org',
       '@graph': [
         {
           '@type': 'SoftwareApplication',
           '@id': 'https://amigowebster.in/helpdesk#software',
-          name: 'AmigoWebster IT Help Desk Software 2026',
+          name: 'AmigoWebster IT Helpdesk & Helpdesk Software 2026',
           applicationCategory: 'BusinessApplication',
           applicationSubCategory: 'IT Help Desk & Support Ticketing System',
           operatingSystem: 'Web, Cloud, Windows, macOS, Android, iOS',
           url: 'https://amigowebster.in/helpdesk',
           image: 'https://amigowebster.com/wp-content/uploads/2026/05/1-img-e1779434796527.jpg',
           description:
-            'IT Help Desk Software in Chennai & Medavakkam by AmigoWebster. Handle 10x more support cases with multi-channel inbox, 60% quicker response time with automations, SLA monitoring alerts, and role-based ticket management.',
+            'IT Helpdesk and Helpdesk Software in Chennai & Medavakkam by AmigoWebster. Handle 10x more support cases with multi-channel inbox, 60% quicker response time with automations, SLA monitoring alerts, and role-based ticket management.',
           offers: {
             '@type': 'Offer',
             price: '11999',
@@ -138,9 +138,9 @@ const subpages = [
     bodyHtml: `
       <main>
         <article>
-          <h1>IT Help Desk Software in Chennai &amp; Medavakkam – Handle 10x More Support Cases</h1>
+          <h1>IT Helpdesk &amp; Helpdesk Software in Chennai &amp; Medavakkam – Handle 10x More Support Cases</h1>
           <p>
-            <strong>Discover HelpDesk 2026 by AmigoWebster:</strong> A helpdesk is a support system that helps users resolve
+            <strong>Discover IT Helpdesk 2026 by AmigoWebster:</strong> An IT helpdesk is a support system that helps users resolve
             technical issues, answer queries, and provide assistance related to products or services. Commonly used in IT
             companies, schools, banks, healthcare organizations, and businesses across <strong>Chennai &amp; Medavakkam</strong>
             to ensure smooth support operations.
@@ -150,24 +150,24 @@ const subpages = [
             <li>60% quicker response time with automations</li>
             <li>AI tools for writing, summarizing, and support</li>
           </ul>
-          <p><a href="/blog/it-help-desk-software-in-chennai">Read Complete Guide: Best IT Help Desk Software in Chennai &amp; Medavakkam</a></p>
+          <p><a href="/blog/it-help-desk-software-in-chennai">Read Complete Guide: Best IT Helpdesk Software in Chennai &amp; Medavakkam</a></p>
         </article>
       </main>`
   },
   {
     dir: 'billing-software',
     url: 'https://amigowebster.in/billing-software',
-    title: 'Billing Software in Medavakkam & Chennai | GST Billing 2026 – AmigoWebster',
+    title: 'Billing Software & GST Billing Software in Chennai & Medavakkam – AmigoWebster',
     description:
-      'Best GST Billing Software in Medavakkam & Chennai by AmigoWebster (https://amigowebster.in/billing-software). All invoices, payments, appointments, and expenses in one place with 70% faster billing.',
+      'Best GST Billing Software in Medavakkam & Chennai by AmigoWebster (https://amigowebster.in/billing-software). All invoices, payments, appointments, POS billing, and expenses in one place with 70% faster billing.',
     keywords:
-      'billing software in medavakkam, billing software in chennai, gst billing software medavakkam, clinic hospital billing software chennai, amigowebster billing software, pos billing software chennai',
+      'billing software, gst billing software, billing software in chennai, billing software in medavakkam, pos billing software chennai, retail pos billing software chennai, clinic hospital billing software chennai, amigowebster billing software',
     schema: {
       '@context': 'https://schema.org',
       '@graph': [
         {
           '@type': 'SoftwareApplication',
-          name: 'AmigoWebster GST Billing Software 2026',
+          name: 'AmigoWebster Billing Software & GST Invoicing 2026',
           applicationCategory: 'BusinessApplication',
           operatingSystem: 'Web, Cloud, Windows, Android, iOS',
           url: 'https://amigowebster.in/billing-software',
@@ -204,7 +204,7 @@ const subpages = [
     bodyHtml: `
       <main>
         <article>
-          <h1>Billing Software in Medavakkam &amp; Chennai – Streamline Your Business Finances</h1>
+          <h1>Billing Software &amp; GST Invoicing in Medavakkam &amp; Chennai</h1>
           <p>Cloud-ready GST Billing &amp; Practice/Retail Management Software for retail shops, clinics, and hospitals in Medavakkam and Chennai.</p>
           <p><a href="/blog/gst-billing-software-in-medavakkam-chennai">Read Complete Guide: GST Billing Software in Medavakkam &amp; Chennai</a></p>
           <p><a href="/">Return to AmigoWebster: Website Development in Medavakkam &amp; Chennai</a></p>
@@ -214,11 +214,11 @@ const subpages = [
   {
     dir: 'quick-commerce-website',
     url: 'https://amigowebster.in/quick-commerce-website',
-    title: 'Quick Commerce Website Development in Chennai & Medavakkam – AmigoWebster',
+    title: 'Quick Commerce & E-Commerce Website Development in Chennai – AmigoWebster',
     description:
-      'Accelerate your business growth with Quick Commerce Website Development in Chennai & Medavakkam by AmigoWebster (https://amigowebster.in/quick-commerce-website).',
+      'Accelerate your business growth with Quick Commerce and E-Commerce Website Development in Chennai & Medavakkam by AmigoWebster (https://amigowebster.in/quick-commerce-website). Deliver products in minutes with live tracking.',
     keywords:
-      'quick commerce website development chennai, hyperlocal delivery website medavakkam, grocery delivery app chennai, amigowebster quick commerce',
+      'ecommerce website, ecommerce website development, quick commerce website development chennai, online shopping website chennai, hyperlocal delivery website medavakkam, grocery delivery app chennai, amigowebster quick commerce',
     schema: {
       '@context': 'https://schema.org',
       '@type': 'SoftwareApplication',
@@ -229,8 +229,9 @@ const subpages = [
     bodyHtml: `
       <main>
         <article>
-          <h1>Quick Commerce Website Development in Chennai &amp; Medavakkam</h1>
+          <h1>Quick Commerce &amp; E-Commerce Website Development in Chennai &amp; Medavakkam</h1>
           <p>Deliver groceries, food, medicines, and retail essentials to customers in minutes with real-time inventory sync and UPI/Razorpay checkout.</p>
+          <p><a href="/blog/ecommerce-website-development-in-chennai">Read Complete Guide: E-Commerce Website Development in Chennai</a></p>
         </article>
       </main>`
   },

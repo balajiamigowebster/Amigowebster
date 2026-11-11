@@ -43,7 +43,7 @@ export const SEO_PAGES = {
     description:
       'AmigoWebster is a trusted agency for Website Development in Chennai and Website Development in Medavakkam. Custom business websites, React JS apps, e-commerce stores & SEO starting at ₹7,000.',
     keywords:
-      'website development in chennai, website development in medavakkam, web design company in chennai, web designers in medavakkam, amigowebster, ecommerce website development chennai, react js developers chennai',
+      'website development in chennai, website development in medavakkam, web design company in chennai, web designers in medavakkam, it helpdesk, helpdesk, billing software, ecommerce website, ecommerce website development chennai, react js developers chennai',
     h1: 'Premier Website Development in Chennai & Medavakkam'
   },
   about: {
@@ -79,7 +79,7 @@ export const SEO_PAGES = {
     description:
       'Explore full-stack digital services from AmigoWebster: Website Development in Chennai & Medavakkam, WooCommerce/Shopify stores, Local SEO, Google Ads, Billing Software & Branding.',
     keywords:
-      'web development services chennai, ecommerce development medavakkam, seo agency medavakkam chennai, billing software chennai, digital marketing medavakkam',
+      'web development services chennai, ecommerce development medavakkam, ecommerce website, it helpdesk, helpdesk software, billing software, seo agency medavakkam chennai, billing software chennai, digital marketing medavakkam',
     h1: 'Comprehensive Website Development & Digital Services'
   },
   pricing: {
@@ -88,44 +88,44 @@ export const SEO_PAGES = {
     description:
       'Transparent website development pricing in Chennai and Medavakkam. Single-page business websites from ₹7,000, dynamic corporate websites, and full e-commerce platforms.',
     keywords:
-      'website development cost in chennai, affordable website design medavakkam, 7000 website package chennai, business website price chennai',
+      'website development cost in chennai, affordable website design medavakkam, 7000 website package chennai, business website price chennai, ecommerce website cost chennai',
     h1: 'Transparent Website Development Pricing in Chennai'
   },
   portfolio: {
     path: '/website',
     title: 'Website Design Projects & Live Screenshots | AmigoWebster Chennai & Medavakkam',
     description:
-      'Explore all 34+ live website development projects with full screenshots by AmigoWebster (amigowebster.com/website/): Sigmatechx, Madhu Phonics, Kavitha Travels, PS Travels, Kuber Globals, Ur Dentist, Rangas Dental, Idlish & more.',
+      'Explore all 37+ live website development projects with full screenshots by AmigoWebster (amigowebster.com/website/): India Wears, Thoranam, Dharmic Life, GGA MEP, Sigmatechx, Madhu Phonics, Kavitha Travels, PS Travels & more.',
     keywords:
-      'amigowebster website projects, amigowebster portfolio screenshots, web design examples chennai, madhusphonics, kavitha travels, raai2k, kuber globals, sansirong',
+      'amigowebster website projects, amigowebster portfolio screenshots, web design examples chennai, indiawears, thoranam, madhusphonics, kavitha travels, kuber globals',
     h1: 'Our Website Design Projects & Live Screenshots'
   },
   helpdesk: {
     path: '/helpdesk',
-    title: 'IT Help Desk Software in Chennai & Medavakkam | HelpDesk 2026 – AmigoWebster',
+    title: 'IT Helpdesk & Helpdesk Software in Chennai | IT Help Desk Portal – AmigoWebster',
     description:
-      'Best IT Help Desk Software in Chennai & Medavakkam by AmigoWebster (https://amigowebster.in/helpdesk). Handle 10x more support cases, ticket management, SLA alerts, email automation & multi-channel support.',
+      'Best IT Helpdesk and Helpdesk Software in Chennai & Medavakkam by AmigoWebster (https://amigowebster.in/helpdesk). Automate ticket management, SLA tracking, IT support desk workflows & customer support.',
     keywords:
-      'it help desk software in chennai, helpdesk software medavakkam, it ticketing system chennai, customer support software chennai, amigowebster helpdesk, help desk ticketing software india, sla monitoring software chennai',
-    h1: 'IT Help Desk Software in Chennai & Medavakkam – Handle 10x More Support Cases'
+      'it helpdesk, helpdesk, helpdesk software, it help desk software in chennai, it help desk medavakkam, it ticketing system chennai, customer support software chennai, amigowebster helpdesk, help desk ticketing software india, sla monitoring software chennai',
+    h1: 'IT Helpdesk & Helpdesk Software in Chennai & Medavakkam – Handle 10x More Support Cases'
   },
   billing: {
     path: '/billing-software',
-    title: 'Billing Software in Medavakkam & Chennai | GST Billing 2026 – AmigoWebster',
+    title: 'Billing Software & GST Billing Software in Chennai & Medavakkam – AmigoWebster',
     description:
-      'Best GST Billing Software in Medavakkam & Chennai by AmigoWebster (https://amigowebster.in/billing-software). All invoices, payments, appointments, and expenses in one place with 70% faster billing.',
+      'Best GST Billing Software in Medavakkam & Chennai by AmigoWebster (https://amigowebster.in/billing-software). All invoices, payments, appointments, POS billing, and expenses in one place with 70% faster billing.',
     keywords:
-      'billing software in medavakkam, billing software in chennai, gst billing software medavakkam, clinic hospital billing software chennai, amigowebster billing software, pos billing software chennai',
-    h1: 'Billing Software in Medavakkam & Chennai – Streamline Your Business Finances'
+      'billing software, gst billing software, billing software in chennai, billing software in medavakkam, pos billing software chennai, retail pos billing software chennai, clinic hospital billing software chennai, amigowebster billing software',
+    h1: 'Billing Software & GST Invoicing in Medavakkam & Chennai – Streamline Your Business Finances'
   },
   quickcommerce: {
     path: '/quick-commerce-website',
-    title: 'Quick Commerce Website Development in Chennai & Medavakkam – AmigoWebster',
+    title: 'Quick Commerce & E-Commerce Website Development in Chennai – AmigoWebster',
     description:
-      'Accelerate your business growth with Quick Commerce Website Development in Chennai & Medavakkam by AmigoWebster (https://amigowebster.in/quick-commerce-website). Deliver products in minutes with live tracking.',
+      'Accelerate your business growth with Quick Commerce and E-Commerce Website Development in Chennai & Medavakkam by AmigoWebster (https://amigowebster.in/quick-commerce-website). Deliver products in minutes with live tracking.',
     keywords:
-      'quick commerce website development chennai, hyperlocal delivery website medavakkam, grocery delivery app chennai, amigowebster quick commerce',
-    h1: 'Quick Commerce Website Development in Chennai & Medavakkam'
+      'ecommerce website, ecommerce website development, quick commerce website development chennai, online shopping website chennai, hyperlocal delivery website medavakkam, grocery delivery app chennai, amigowebster quick commerce',
+    h1: 'Quick Commerce & E-Commerce Website Development in Chennai & Medavakkam'
   },
   contact: {
     path: '/contact',
@@ -680,13 +680,13 @@ export const PORTFOLIO_ITEMS = [
 export const PROJECT_SUBPAGES = {
   helpdesk: {
     id: 'helpdesk',
-    badge: 'IT Help Desk Software in Chennai & Medavakkam',
-    title: 'IT Help Desk Software',
-    headline: 'IT Help Desk Software in Chennai & Medavakkam – Handle 10x More Support Cases',
-    subheadline: 'Discover HelpDesk 2026 by AmigoWebster',
+    badge: 'IT Helpdesk & Helpdesk Software 2026',
+    title: 'IT Helpdesk & Helpdesk Software',
+    headline: 'IT Helpdesk & Helpdesk Software in Chennai & Medavakkam – Handle 10x More Support Cases',
+    subheadline: 'Discover AmigoWebster IT Helpdesk 2026',
     heroImage: 'https://amigowebster.com/wp-content/uploads/2026/05/1-img-e1779434796527.jpg',
     overview:
-      'A helpdesk is a support system that helps users resolve technical issues, answer queries, and provide assistance related to products or services. It acts as the first point of contact between customers or employees and the support team. Commonly used in IT companies, schools, banks, healthcare organizations, and businesses across Chennai & Medavakkam to ensure smooth support operations.',
+      'An IT helpdesk is an essential support ticketing system that empowers teams to resolve technical issues, answer queries, track SLAs, and automate customer assistance. AmigoWebster IT Helpdesk software acts as the centralized point of contact for IT companies, schools, hospitals, healthcare organizations, and enterprises across Chennai & Medavakkam.',
     highlights: [
       'Messages from many channels in one place',
       '60% quicker response time with automations',
@@ -757,13 +757,13 @@ export const PROJECT_SUBPAGES = {
   },
   billing: {
     id: 'billing',
-    badge: 'Billing Software 2026',
-    title: 'Billing Software',
-    headline: 'Streamline Your Business Finances with Billing Software',
-    subheadline: 'Discover Billing Software 2026',
+    badge: 'Billing Software & GST Invoicing 2026',
+    title: 'Billing Software & GST Invoicing',
+    headline: 'Streamline Your Business Finances with Billing Software & GST Invoicing',
+    subheadline: 'Discover AmigoWebster Billing Software 2026',
     heroImage: 'https://amigowebster.com/wp-content/uploads/2026/06/Bill-sofware.jpg',
     overview:
-      'Our cloud-ready GST Billing & Practice/Retail Management Software puts all your invoices, payments, appointments, and expenses in one unified dashboard. Engineered for retail stores, clinics, hospitals, and enterprises in Medavakkam and Chennai seeking 70% faster billing with zero manual errors.',
+      'AmigoWebster Billing Software is a cloud-ready GST billing & retail/practice management platform putting all your invoices, payments, appointments, and inventory in one unified dashboard. Engineered for retail stores, supermarkets, clinics, hospitals, and trading enterprises in Medavakkam and Chennai seeking 70% faster billing with zero manual errors.',
     highlights: [
       'All invoices, payments, and expenses in one place',
       '70% faster billing with automated workflows',
