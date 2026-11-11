@@ -63,6 +63,24 @@ export default function Footer({ onNavigate, onOpenBlog }) {
               );
             })}
           </div>
+          <div className="mt-4 pt-4 border-t border-blue-900/60 flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs text-blue-200">
+            <span className="text-amber-300 font-bold uppercase tracking-wider text-[11px] shrink-0">
+              Near Me Searches:
+            </span>
+            {['Chromepet', 'Medavakkam', 'Tambaram', 'Velachery', 'OMR', 'Guindy', 'Porur', 'Anna Nagar', 'T. Nagar', 'Adyar'].map((place) => {
+              const slug = AREA_BLOG_MAP[place] || 'website-development-in-medavakkam';
+              return (
+                <a
+                  key={place}
+                  href={`/blog/${slug}`}
+                  onClick={(e) => handleAreaClick(e, place)}
+                  className="hover:text-amber-300 transition text-sky-200/90 underline decoration-blue-800 underline-offset-4"
+                >
+                  Website Development Near {place}
+                </a>
+              );
+            })}
+          </div>
         </div>
       </div>
 

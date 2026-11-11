@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { COMPANY_INFO, MEDAVAKKAM_LANDMARKS } from '../data/siteData';
+import { COMPANY_INFO, MEDAVAKKAM_LANDMARKS, NEAR_PLACES_LIST } from '../data/siteData';
 import { useScrollParallax, Reveal } from '../hooks/useParallaxAndReveal';
 import {
   MapPin,
@@ -106,6 +106,36 @@ export default function LocalSEOSection({ activePage, onNavigate }) {
               <span>Explore Near Me Guide</span>
               <ArrowRight className="h-3.5 w-3.5" />
             </a>
+          </div>
+        </Reveal>
+
+        {/* Website Development Near You - Hyper-Local Search Cloud */}
+        <Reveal direction="up" delay={75}>
+          <div className="mt-5 rounded-2xl bg-white p-5 sm:p-6 border border-slate-200 shadow-sm">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3.5">
+              <div className="flex items-center gap-2">
+                <MapPin className="h-4 w-4 text-brand-accent shrink-0" />
+                <h4 className="text-xs font-bold uppercase tracking-wider text-slate-700">
+                  Website Development Near You • Local Chennai Neighborhoods
+                </h4>
+              </div>
+              <span className="text-[11px] text-slate-500 font-medium">
+                Click any locality for local pricing, doorstep visits &amp; SEO
+              </span>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {NEAR_PLACES_LIST.map((item) => (
+                <a
+                  key={item.name}
+                  href={`/blog/${item.slug}`}
+                  className="inline-flex items-center gap-1.5 rounded-lg bg-slate-50 hover:bg-brand-navy hover:text-white text-slate-700 text-xs font-semibold px-3 py-1.5 transition border border-slate-200 hover:border-brand-navy group"
+                  title={`Website Development Near ${item.name}`}
+                >
+                  <MapPin className="h-3 w-3 text-brand-accent group-hover:text-amber-300 transition" />
+                  <span>Website Development Near {item.name}</span>
+                </a>
+              ))}
+            </div>
           </div>
         </Reveal>
 

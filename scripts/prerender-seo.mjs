@@ -503,6 +503,7 @@ for (const post of BLOG_POSTS) {
             itemListElement: [
               { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Website Designer Near Me' } },
               { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Website Development Near Me' } },
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Website Development Near Chromepet' } },
               { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Website Development in Chennai' } },
               { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'E-Commerce Website Development' } }
             ]

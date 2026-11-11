@@ -43,7 +43,7 @@ export const SEO_PAGES = {
     description:
       'AmigoWebster is a trusted agency for Website Development in Chennai and Website Development in Medavakkam. Custom business websites, React JS apps, e-commerce stores & SEO starting at ₹7,000.',
     keywords:
-      'website development in chennai, website development in medavakkam, web design company in chennai, web designers in medavakkam, it helpdesk, helpdesk, billing software, ecommerce website, ecommerce website development chennai, react js developers chennai',
+      'website development in chennai, website development in medavakkam, website development near chromepet, website development near medavakkam, website development near tambaram, website development near velachery, website development near me, website designer near me, web design company in chennai, web designers in medavakkam, it helpdesk, helpdesk, billing software, ecommerce website, ecommerce website development chennai, react js developers chennai',
     h1: 'Premier Website Development in Chennai & Medavakkam'
   },
   about: {
@@ -61,7 +61,7 @@ export const SEO_PAGES = {
     description:
       'Looking for reliable Website Development in Chennai? AmigoWebster builds high-converting corporate websites, e-commerce stores, and React JS applications across OMR, Guindy, T. Nagar, Anna Nagar, and Velachery.',
     keywords:
-      'website development in chennai, best web design company in chennai, ecommerce website development in chennai, corporate website developers chennai, react website development chennai, seo friendly website chennai',
+      'website development in chennai, website development near chromepet, website development near tambaram, website development near velachery, website development near omr, website development near guindy, website development near anna nagar, best web design company in chennai, ecommerce website development in chennai, corporate website developers chennai, react website development chennai, seo friendly website chennai',
     h1: 'Result-Driven Website Development in Chennai'
   },
   medavakkam: {
@@ -70,7 +70,7 @@ export const SEO_PAGES = {
     description:
       'Top-rated Website Development in Medavakkam by AmigoWebster. Located right near Medavakkam & Kovilambakkam, we craft SEO-friendly websites for local businesses, clinics, retail stores, and startups from ₹7,000.',
     keywords:
-      'website development in medavakkam, web designers in medavakkam, web development near kovilambakkam, website company in pallikaranai, local seo medavakkam, website design tambaram velachery',
+      'website development in medavakkam, website development near medavakkam, website development near chromepet, website development near kovilambakkam, website development near tambaram, website development near pallikaranai, web designers in medavakkam, web development near kovilambakkam, website company in pallikaranai, local seo medavakkam, website design tambaram velachery',
     h1: 'Trusted Local Website Development in Medavakkam'
   },
   services: {
@@ -938,7 +938,7 @@ export const MEDAVAKKAM_LANDMARKS = [
   },
   {
     area: 'Kovilambakkam & Manikandan Nagar (Our HQ)',
-    focus: 'Startups, coaching institutes (like Madhu Phonics, Hema Sir Classes), clinics, and service agencies.'
+    focus: 'Startups, D2C brands (like India Wears, Madhu Phonics), clinics, and service agencies.'
   },
   {
     area: 'Perumbakkam & Sholinganallur Link Road',
@@ -948,6 +948,29 @@ export const MEDAVAKKAM_LANDMARKS = [
     area: 'Vengambakkam, Sithalapakkam & Tambaram Corridor',
     focus: 'Exporters (Kuber Globals, Janani Global Impex), logistics providers (V5 Logistics, Sri Bhavani Packers), and banquet halls.'
   }
+];
+
+export const NEAR_PLACES_LIST = [
+  { name: 'Chromepet', slug: 'website-development-in-chromepet', keyword: 'website development near chromepet' },
+  { name: 'Medavakkam', slug: 'website-development-in-medavakkam', keyword: 'website development near medavakkam' },
+  { name: 'Tambaram', slug: 'website-development-in-tambaram', keyword: 'website development near tambaram' },
+  { name: 'Velachery', slug: 'website-development-in-velachery', keyword: 'website development near velachery' },
+  { name: 'Kovilambakkam', slug: 'website-development-in-medavakkam', keyword: 'website development near kovilambakkam' },
+  { name: 'Pallikaranai', slug: 'website-development-in-pallikaranai-nanmangalam', keyword: 'website development near pallikaranai' },
+  { name: 'Perumbakkam', slug: 'website-development-in-perumbakkam', keyword: 'website development near perumbakkam' },
+  { name: 'OMR', slug: 'website-development-in-omr', keyword: 'website development near omr' },
+  { name: 'Sholinganallur', slug: 'website-development-in-sholinganallur', keyword: 'website development near sholinganallur' },
+  { name: 'Guindy', slug: 'website-development-in-guindy', keyword: 'website development near guindy' },
+  { name: 'Porur', slug: 'website-development-in-porur', keyword: 'website development near porur' },
+  { name: 'Ambattur', slug: 'website-development-in-ambattur', keyword: 'website development near ambattur' },
+  { name: 'Anna Nagar', slug: 'website-development-in-anna-nagar', keyword: 'website development near anna nagar' },
+  { name: 'Nungambakkam', slug: 'website-development-in-nungambakkam', keyword: 'website development near nungambakkam' },
+  { name: 'T. Nagar', slug: 'website-development-in-t-nagar', keyword: 'website development near t nagar' },
+  { name: 'Adyar', slug: 'website-development-in-adyar', keyword: 'website development near adyar' },
+  { name: 'Madipakkam', slug: 'website-development-in-madipakkam-nanganallur', keyword: 'website development near madipakkam' },
+  { name: 'Nanganallur', slug: 'website-development-in-madipakkam-nanganallur', keyword: 'website development near nanganallur' },
+  { name: 'Nanmangalam', slug: 'website-development-in-pallikaranai-nanmangalam', keyword: 'website development near nanmangalam' },
+  { name: 'Selaiyur', slug: 'website-development-in-tambaram', keyword: 'website development near selaiyur' }
 ];
 
 export const FAQS = [
